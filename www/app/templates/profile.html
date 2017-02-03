@@ -1,0 +1,47 @@
+<ion-view>
+  <ion-content>
+    <ion-list class="list-inset">
+      <ion-item class="item-text-wrap detail-profile" >
+        <img class="detail-img" ng-src="img/users/{{loggedUser.username}}_profile.png" alt="{{loggedUser.nome}} Photo">
+        <h2 style="color: #333">{{loggedUser.nome}}</h2>
+        <h3 style="color: #333">Doador</h3>
+        <p >{{loggedUser.bio}}</p>
+
+        <button class="button icon ion-chatbox"></button>
+        <button class="button icon ion-stats-bars"></button>
+        <button class="button icon ion-gear-a"></button>
+
+        <div>
+          <button class="button button-block">
+            Doações
+          </button>
+
+          <div ng-if="loggedUser.tipo === 'doador'">
+          <button class="button button-block">
+            Ongs apoiadas
+          </button>
+          </div>
+
+          <div ng-if="loggedUser.tipo === 'donatario'">
+            <button class="button button-block">
+              Ongs parceiras
+            </button>
+          </div>
+
+
+          <button class="button button-block">
+            Ranking de doaçoes
+          </button>
+
+          <button class="button button-block btn-hackaton">
+            EXPLORAR
+          </button>
+
+
+        </div>
+
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

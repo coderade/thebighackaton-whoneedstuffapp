@@ -1,0 +1,48 @@
+<ion-view>
+  <ion-nav-title>
+    <img class="logo-branding" ng-src= "img/logotipo.png">
+    <p>Dashboard</p>
+  </ion-nav-title>
+  <ion-content padding="true">
+    <br>
+    <form name="form.search" ng-submit="form.search.$valid && goToList()">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" ng-model="search.string" required="required" placeholder="Cidade, estado ou nome da oferta">
+      </label>
+      <br />
+      <div>
+        <label class="checkbox" style="display:flex; align-items: center">
+          <input type="checkbox" ng-model="search.satTrans" style="margin-right: 20px;">
+          Prestação de Serviços
+        </label>
+      </div>
+      <div>
+        <label class="checkbox" style="display:flex; align-items: center">
+          <input type="checkbox" ng-model="search.wheelChair" style="margin-right: 20px;">
+          Doação de Objetos
+        </label>
+      </div>
+      <button class="button button-block btn-hackaton" ng-disabled="form.search.$invalid"><b>Buscar</b></button>
+    </form>
+    <br>
+    <br>
+    <h3>Ofertas</h3>
+    <ion-list>
+      <ion-item class="item-icon-right item-avatar item-royal" ui-sref="detail({id: oferta.id})" ng-repeat="oferta in ofertas track by oferta.id | limitTo:limit">
+        <img ng-src="{{oferta.thumb}}">
+        <h2 class="positive oferta-title">{{oferta.nome}}</h2>
+        <p class="black-label">
+          <b class="black-label">{{oferta.cidade}}</b> / {{oferta.estado}}<br>
+          {{oferta.rua}} {{oferta.numero}}, {{oferta.cep}}, {{oferta.cidade}}
+        </p>
+        <i class="icon ion-ios-arrow-right"></i>
+      </ion-item>
+      <ion-item class="text-center item-royal" ng-if="ofertas && !ofertas.length">Sem ofertas encontradas :(</ion-item>
+    </ion-list>
+    <ion-infinite-scroll
+      ng-if="!ofertas"
+      on-infinite="loadNext()">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

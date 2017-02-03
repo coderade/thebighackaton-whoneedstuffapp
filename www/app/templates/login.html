@@ -1,0 +1,41 @@
+<ion-view id="login" view-title="Login" name="login-view">
+  <ion-content padding="true" scroll="false">
+    <form>
+      <div class="row responsive-md">
+        <div class="col col-50 col-offset-25">
+
+          <div class="header padding text-center">
+            <img src="img/logo3_whoneed_hackaton.png" alt="logo"/>
+          </div>
+
+          <div class="list">
+            <label class="item item-input">
+              <input type="text" placeholder="Username" ng-model="data.username">
+            </label>
+            <label class="item item-input">
+              <input type="password" placeholder="Password" ng-model="data.password">
+            </label>
+          </div>
+
+          <button class="button button-block button-positive" ng-click="login(data)">
+            Log In
+          </button>
+
+          <div class="row row-no-padding">
+            <div class="col">
+              <button class="button button-clear button-light">
+                Forgot password?
+              </button>
+            </div>
+
+            <div class="col text-right">
+              <button class="button button-clear button-light">
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

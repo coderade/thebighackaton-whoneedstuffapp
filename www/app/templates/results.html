@@ -1,0 +1,31 @@
+<ion-view>
+  <ion-nav-title>{{search}}</ion-nav-title>
+  <ion-nav-buttons side="right">
+    <button class="button button-clear icon" ng-disabled="loading" ng-class="{'ion-earth': show.list, 'ion-ios-list': !show.list}" ng-click="show.list = !show.list">
+    </button>
+  </ion-nav-buttons>
+  <div id="map" data-tap-disabled="true" google-map style="height:100%; width: 100%;" api-key="{{apiKey}}" ofertas="ofertas"></div>
+  <ion-content ng-show="show.list" class="background-stable">
+    <ion-refresher on-refresh="reload()">
+    </ion-refresher>
+    <div ng-show="show.list">
+      <ion-list>
+        <ion-item ui-sref="detail({id: oferta.id})" class="item-royal item-avatar item-icon-right" ng-repeat="oferta in ofertas | limitTo:limit">
+          <img ng-src="{{oferta.thumb}}">
+          <h2 class="oferta-title" >{{oferta.nome}}</h2>
+          <p class="black-label">
+            <b class="black-label">{{oferta.cidade}}</b> / Estado {{oferta.estado}}<br>
+            {{oferta.rua}} {{oferta.numero}}, {{oferta.cep}} {{oferta.cidade}}
+          </p>
+          <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+        <ion-item class="text-center item-royal" ng-if="ofertas && !ofertas.length">Nada foi encontrado :(</ion-item>
+      </ion-list>
+    </div>
+    <ion-infinite-scroll
+      ng-if="!ofertas || ofertas.length > limit"
+      class=""
+      on-infinite="loadMore()">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>
