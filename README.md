@@ -1,4 +1,7 @@
 #whoneedstuff-app 
+
+![](logo.jpg)
+
 Aplicativo desenvolvido para o The Big Hackaton na Campus Party 2017 #cpbr10"
 Applicação está disponível atualente somente para Android
 
