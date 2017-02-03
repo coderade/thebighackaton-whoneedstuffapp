@@ -11,7 +11,8 @@ Aplicação está disponível atualente na plataforma Android.
 
 Para baixar o executável `.apk`, use o link: [Baixar o aplicativo](https://drive.google.com/file/d/0B4d4_SUk6fVQY1UtV3ZIQ0ltTTg/view)
 
-O Executável está disponível na pasta executavel, para baixá-lo clone o projeto e copie esse arquivo para o seu celular.
+O Executável também está disponível na pasta  `executavel` dentro do projeto, 
+para baixá-lo clone o projeto e copie esse arquivo para o seu celular.
 
 
 
