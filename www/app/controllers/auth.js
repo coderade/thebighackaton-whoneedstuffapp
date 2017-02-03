@@ -6,13 +6,14 @@ define([
 
   app.controller('AuthCtrl', [
     '$scope',
-    '$state',
+    '$rootScope',
     'authService',
-    function ($scope, $state, authService){
+    '$state',
+    function ($scope, $rootScope, authService, $state){
       $scope.search = {};
       $scope.login = function (user) {
         if(authService.validateUser(user)) {
-          $scope.isAuthenticated = true;
+          $rootScope.isAuthenticated = true;
           if(user.username === "ong"){
             $state.go('dashboard');
           }

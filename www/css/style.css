@@ -121,8 +121,18 @@ ion-item p, b  {
 }
 
  #map {
-   height: 800px;
-   width: 100%;
+   height: 450px;
+   /*width: 100%;*/
+ }
+
+ .map-legend {
+   text-align: center;
+   font-size: 1.2em;
+   margin: 2.4em;
+   color: #333;
+   text-indent: initial;
+    font-weight: bold;
+   line-height: 29px;
  }
 
 /*#map_canvas {*/

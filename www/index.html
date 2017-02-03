@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+
     <title></title>
 
 
@@ -16,14 +18,13 @@
 
     <!-- load requirejs config -->
     <script src="main.js"></script>
-    <!-- load requirejs -->
 
-
+    <!-- lodash -->
     <script src="lib/lodash/dist/lodash.min.js"></script>
 
-    <!--<script src="http://maps.google.com/maps/api/js?key=AIzaSyCdfXz7OnSjmkdjkujJ_NWl3bKfePt3eDk&sensor=true"></script>-->
 
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>
+    <!--google maps api-->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCdfXz7OnSjmkdjkujJ_NWl3bKfePt3eDk"></script>
 
     <script src="lib/requirejs/require.min.js"></script>
 
@@ -41,7 +42,8 @@
         </ion-header-bar>
         <ion-content style="background-color: darkgrey;">
           <ion-list>
-            <ion-item class="item-royal item-icon-right" ng-click="openModal($index)" ng-repeat="page in pages">
+            <ion-item class="item-royal item-icon-right" ng-click="openModal($index)" ng-repeat="page in pages"
+                      ng-if="page.security !='authenticated' || page.security !='authenticated' && isAuthenticated">
               {{page.title}}
               <i class="icon" ng-class="page.icon"></i>
             </ion-item>
@@ -66,3 +68,6 @@
     </ion-side-menus>
   </body>
 </html>
+
+
+

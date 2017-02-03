@@ -7,13 +7,14 @@
         <h3 style="color: #333">Doador</h3>
         <p >{{loggedUser.bio}}</p>
 
-        <button class="button icon ion-chatbox"></button>
+        <button ng-if="loggedUser.tipo === 'doador'" class="button icon ion-chatbox"></button>
         <button class="button icon ion-stats-bars"></button>
         <button class="button icon ion-gear-a"></button>
 
         <div>
+
           <button class="button button-block">
-            Doações
+            Minhas doações
           </button>
 
           <div ng-if="loggedUser.tipo === 'doador'">
@@ -36,10 +37,7 @@
           <button class="button button-block btn-hackaton">
             EXPLORAR
           </button>
-
-
         </div>
-
       </ion-item>
 
     </ion-list>

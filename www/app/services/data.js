@@ -106,9 +106,9 @@ define([
         website: 'http://example.com'
       }, {
         id: 6,
-        nome: 'Science Event',
-        cidade: 'Hachelbich',
-        estado: 'Kyffhäuserland',
+        nome: 'Oferta 1',
+        cidade: 'Cidade 7',
+        estado: 'SP',
         rua: 'Oberdorf',
         numero: '10',
         cep: '99707',
@@ -128,10 +128,10 @@ define([
         website: 'http://example.com'
       }, {
         id: 7,
-        nome: 'Science Event',
-        cidade: 'Berka',
-        estado: 'Sondershausen',
-        rua: 'Wittchental',
+        nome: 'Oferta 1',
+        cidade: 'Sao Paulo',
+        estado: 'SP',
+        rua: 'Rua 1',
         numero: '10',
         cep: '99706',
         dates: [
@@ -150,9 +150,9 @@ define([
         website: 'http://example.com'
       }, {
         id: 8,
-        nome: 'Science Event',
-        cidade: 'Roßla',
-        estado: 'Sangerhausen',
+        nome: 'Oferta 1',
+        cidade: 'Sao Paulo',
+        estado: 'SP',
         rua: 'Rua Teste',
         numero: '17',
         cep: '41515',
@@ -170,9 +170,9 @@ define([
         website: 'http://example.com'
       }, {
         id: 9,
-        nome: 'Science Event',
-        cidade: 'Kelbra',
-        estado: 'Sangerhausen',
+        nome: 'Oferta 1',
+        cidade: 'Sao Paulo',
+        estado: 'SP',
         rua: 'Rua Teste',
         numero: '17',
         cep: '41515',
@@ -190,9 +190,9 @@ define([
         website: 'http://example.com'
       }, {
         id: 10,
-        nome: 'Science Event',
-        cidade: 'Tilleda',
-        estado: 'Sangerhausen',
+        nome: 'Oferta 1',
+        cidade: 'Sao Paulo',
+        estado: 'SP',
         rua: 'Rua Teste',
         numero: '17',
         cep: '41515',
@@ -210,8 +210,8 @@ define([
         website: 'http://example.com'
       }, {
         id: 11,
-        nome: 'Sport Event',
-        cidade: 'Neuss',
+        nome: 'Oferta 11',
+        cidade: 'Curitiba',
         estado: 'PR',
         rua: 'Rua Teste',
         numero: '17',
@@ -229,411 +229,11 @@ define([
           email: 'test@example.com'
         },
         website: 'http://example.com'
-      }, {
-        id: 12,
-        nome: 'Sport Event',
-        cidade: 'Krefeld',
-        estado: 'PR',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 51.333347,
-        lng: 6.584587,
-        wheelchair: true,
-        wheelchairLift: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 13,
-        nome: 'Sport Event',
-        cidade: 'Kempen',
-        estado: 'PR',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 51.361224,
-        lng: 6.428719,
-        wheelchair: true,
-        wheelchairLift: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 14,
-        nome: 'Sport Event',
-        cidade: 'Mühlheim an der Ruhr',
-        estado: 'Duisburg',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 51.421209,
-        lng: 6.882591,
-        wheelchair: true,
-        wheelchairLift: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 15,
-        nome: 'Sport Event',
-        cidade: 'Kreuzberg',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.497492,
-        lng: 13.395252,
-        wheelchair: true,
-        wheelchairLift: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 16,
-        nome: 'Sport Event',
-        cidade: 'Charlottenburg',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.515881,
-        lng: 13.295689,
-        wheelchair: true,
-        wheelchairLift: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 17,
-        nome: 'Sport Event',
-        cidade: 'Schöneberg',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.480977,
-        lng: 13.369846,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 18,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 19,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 20,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 21,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 22,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 23,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 24,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 25,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 26,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 27,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 28,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 29,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
-      }, {
-        id: 30,
-        nome: 'Sport Event',
-        cidade: 'Cidade 31',
-        estado: 'Estado 94',
-        rua: 'Rua Teste',
-        numero: '17',
-        cep: '41515',
-        dates: [
-          'Segunda: 9:00 AM',
-          'Sabado: 9:00 AM'
-        ],
-        lat: 52.549506,
-        lng: 13.555241,
-        wheelchair: true,
-        satTrans: true,
-        contact: {
-          tel: '1234/56789',
-          email: 'test@example.com'
-        },
-        website: 'http://example.com'
       }];
 
       this.pages = [
         {
+          security: 'authenticated',
           alias: 'profile',
           content: '<h1>HTML Ipsum Presents</h1> <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p> <h2>Header Level 2</h2> <ol> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li> <li>Aliquam tincidunt mauris eu risus.</li> </ol> <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote> <h3>Header Level 3</h3> <ul> <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li> <li>Aliquam tincidunt mauris eu risus.</li> </ul>',
           title: 'Perfil',
@@ -670,7 +270,46 @@ define([
             tel: '1234/56789',
             email: 'doador@whoneedstuff.com',
             website: 'http://example.com'
-          }
+          },
+          recommendations: [
+            {
+              id : 1,
+              nome: 'lorem Ipsum',
+              pontuacao: 5,
+              comentario: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
+              ' Aliquid animi consectetur corporis culpa deserunt'
+            },
+            {
+              id : 2,
+              nome: 'lorem Ipsum',
+              pontuacao: 2,
+             comentario: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
+              ' Aliquid animi consectetur corporis culpa deserunt'
+            },
+            {
+              id : 3,
+              nome: 'lorem Ipsum',
+              pontuacao: 4,
+             comentario: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
+              ' Aliquid animi consectetur corporis culpa deserunt'
+            },
+            {
+              id : 4,
+              nome: 'lorem Ipsum',
+              pontuacao: 5,
+             comentario: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
+              ' Aliquid animi consectetur corporis culpa deserunt'
+            },
+            {
+              id : 5,
+              nome: 'lorem Ipsum',
+              pontuacao: 0,
+             comentario: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
+              ' Aliquid animi consectetur corporis culpa deserunt'
+            }
+
+
+          ]
         }
        ]
 

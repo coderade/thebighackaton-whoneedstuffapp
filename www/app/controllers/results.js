@@ -1,8 +1,6 @@
 define([
   'app',
-  '' +
-  'services/oferta',
-  'directives/googleMaps'
+  'services/oferta'
 ], function (app) {
   'use strict';
 
@@ -15,13 +13,11 @@ define([
     'ofertaService',
     function ($scope, $stateParams, $state, $timeout, $ionicHistory, ofertaService) {
       var first = true;
-	  // $scope.apiKey = 'YOUR_API_KEY_HERE';
       $scope.limit = 10;
       $scope.show = {
         list: true
       };
 
-      // show next 10
       $scope.loadMore = function () {
         if (!first) {
           $timeout(function () {
@@ -32,16 +28,12 @@ define([
         }
         first = false;
 
-        var wheelChair = $stateParams.wheelChair === 'true',
-            wheelChairLift = $stateParams.wheelChairLift === 'true',
-            search = $stateParams.search;
+        var search = $stateParams.search;
 
-        if (wheelChair !== $scope.wheelChair || wheelChairLift !== $scope.wheelChairLift || search !== $scope.search) {
-          $scope.wheelChair = wheelChair;
-          $scope.wheelChairLift = wheelChairLift;
+        if ( search !== $scope.search) {
           $scope.search = search;
           $scope.loading = true;
-          ofertaService.search(search, wheelChair, wheelChairLift).then(function (ofertas) {
+          ofertaService.search(search).then(function (ofertas) {
             $scope.limit = 10;
             $scope.ofertas = ofertas;
           }).finally(function () {
@@ -55,7 +47,7 @@ define([
 
       $scope.reload = function () {
         $scope.loading = true;
-        ofertaService.search($scope.search, $scope.wheelChair, $scope.wheelChairLift).then(function (ofertas) {
+        ofertaService.search($scope.search).then(function (ofertas) {
           $scope.limit = 10;
           $scope.ofertas = ofertas;
         }).finally(function () {
@@ -70,9 +62,7 @@ define([
           disableAnimate: true
         });
         $state.go('results.map', {
-          search: $scope.string,
-          wheelChair: $scope.wheelChair,
-          wheelChairLift: $scope.wheelChairLift
+          search: $scope.string
         });
       };
       $scope.goToList = function () {
@@ -81,9 +71,7 @@ define([
           disableAnimate: true
         });
         $state.go('results.list', {
-          search: $scope.search,
-          wheelChair: $scope.wheelChair,
-          wheelChairLift: $scope.wheelChairLift
+          search: $scope.search
         });
       };
     }

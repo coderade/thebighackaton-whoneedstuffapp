@@ -14,7 +14,7 @@ define([
 
         $timeout(function () {
           deferred.resolve(angular.copy(dataService.pages));
-        }, 1000);
+        }, 500);
 
         return deferred.promise;
       };
