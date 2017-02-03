@@ -2,18 +2,19 @@
 
 ![](logo.jpg)
 
-Aplicativo desenvolvido para o The Big Hackaton na Campus Party 2017 #cpbr10"
-Applicação está disponível atualente somente para Android
+Aplicativo desenvolvido para o The Big Hackaton na Campus Party 2017 - #cpbr10"
+
+Aplicação está disponível atualente na plataforma Android.
 
 
-###Executavel
+###Executável
 
-O Executavel está disponível na pasta executavel
+O Executável está disponível na pasta executavel, para baixá-lo clone o projeto e copie esse arquivo para o seu celular
 
 
 ###Login
 
-Atualmente há duas opções de login, usuário doador e donatário
+Atualmente há duas opções de login para usuários doador e donatário
 
 ##### Logar como doador
 `usuário :  doador`
