@@ -21,7 +21,7 @@ Atualmente há duas opções de login, logins para usuários doador e donatário
 
 ##### Logar como doador
 `usuário :  doador`
-ogins 
+
 `senha :  <qualquer - pode se deixar o campo em branco>`
 
 
