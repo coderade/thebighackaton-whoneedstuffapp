@@ -53,7 +53,7 @@ define([
           inputPlaceholder: ''
         }).then(function (res) {
           if (res) {
-            // here connect to backend and send report
+
           }
         });
       };
