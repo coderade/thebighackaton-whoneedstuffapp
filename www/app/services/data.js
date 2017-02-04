@@ -58,7 +58,6 @@ define([
         ],
         lat: 51.114004,
         lng: 10.933228,
-        wheelchair: true,
         contact: {
           tel: '1234/56789',
           email: 'test@example.com'
@@ -97,8 +96,6 @@ define([
         lat: 48.302842,
         lng: 11.352900,
         satTrans: true,
-        wheelchair: true,
-        wheelchairLift: true,
         contact: {
           tel: '1234/56789',
           email: 'test@example.com'
@@ -119,8 +116,6 @@ define([
         lat: 51.344143,
         lng: 10.966972,
         satTrans: true,
-        wheelchair: true,
-        wheelchairLift: true,
         contact: {
           tel: '1234/56789',
           email: 'test@example.com'
@@ -141,8 +136,6 @@ define([
         lat: 50.941998,
         lng: 10.073971,
         satTrans: true,
-        wheelchair: true,
-        wheelchairLift: true,
         contact: {
           tel: '1234/56789',
           email: 'test@example.com'
@@ -222,8 +215,6 @@ define([
         ],
         lat: 51.204197,
         lng: 6.687951,
-        wheelchair: true,
-        wheelchairLift: true,
         contact: {
           tel: '1234/56789',
           email: 'test@example.com'

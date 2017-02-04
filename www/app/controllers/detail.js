@@ -42,11 +42,6 @@ define([
 
       $scope.map = function () {
         $state.go('map');
-        // if (ionic.Platform.isIOS()) {
-          // $window.open('maps://?q=' + $scope.oferta.lat + ',' + $scope.oferta.lng, '_system');
-        // } else {
-          // $window.open('geo://0,0?q=' + $scope.oferta.lat + ',' + $scope.oferta.lng + '(' + $scope.oferta.nome + '/' + $scope.oferta.cidade + ')&z=15', '_system');
-        // }
       };
 
       $scope.report = function () {

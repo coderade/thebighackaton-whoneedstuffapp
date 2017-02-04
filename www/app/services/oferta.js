@@ -10,36 +10,12 @@ define([
     'dataService',
     function ($q, $timeout, dataService) {
 
-      function check(currentOferta, satTrans, wheelChair, wheelChairLift) {
-        if (satTrans && wheelChair && wheelChairLift) {
-          if (!currentOferta.satTrans || !currentOferta.wheelChair || !currentOferta.wheelChairLift) {
-            return false;
-          }
-        } else if (satTrans && wheelChair) {
-          if (!currentOferta.satTrans || !currentOferta.wheelChair) {
-            return false;
-          }
-        } else if (wheelChair && wheelChairLift) {
-          if (!currentOferta.wheelChair || !currentOferta.wheelChairLift) {
-            return false;
-          }
-        } else if (satTrans && wheelChairLift) {
-          if (!currentOferta.satTrans || !currentOferta.wheelChairLift) {
-            return false;
-          }
-        } else if (satTrans && !currentOferta.satTrans) {
-          return false;
-        } else if (wheelChair && !currentOferta.wheelChair) {
-          return false;
-        } else if (wheelChairLift && !currentEvent.wheelChairLift) {
-          return false;
-        }
-
+      function check(currentOferta) {
         return true;
       }
 
 
-      this.search = function (searchString, satTrans, wheelChair, wheelChairLift) {
+      this.search = function (searchString) {
         var ofertas = dataService.ofertas,
             deferred = $q.defer(),
             founds = [],
@@ -51,7 +27,7 @@ define([
           if (currentEvent.nome && currentEvent.nome.indexOf(searchString) !== -1 ||
             currentEvent.cidade && currentEvent.cidade.indexOf(searchString) !== -1 ||
             currentEvent.estado && currentEvent.estado.indexOf(searchString) !== -1) {
-            if (check(currentEvent, satTrans, wheelChair, wheelChairLift)) {
+            if (check(currentEvent)) {
               currentEvent.thumb = 'http://lorempixel.com/200/200/sports/?' + ((new Date()).getTime() + i);
               founds.push(currentEvent);
             }
