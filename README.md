@@ -30,5 +30,8 @@ Atualmente há duas opções de login, logins para usuários doador e donatário
 
 `senha :  <qualquer - pode se deixar o campo em branco>`
 
+---
+
+ps. O applicativo foi desenvolvido em 36 horas durante o Hackaton e não foi atualizado após o evento, caso você queira melhorá-l0, sinta-se a vontade para fazer o seu "fork"  e criar pull-requests.
 
 
