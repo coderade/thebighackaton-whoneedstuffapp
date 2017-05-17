@@ -32,6 +32,6 @@ Atualmente há duas opções de login, logins para usuários doador e donatário
 
 ---
 
-ps. O applicativo foi desenvolvido em 36 horas durante o Hackaton e não foi atualizado após o evento, caso você queira melhorá-l0, sinta-se a vontade para fazer o seu "fork"  e criar pull-requests.
+ps. O applicativo foi desenvolvido em 24 horas durante o Hackaton e não foi atualizado após o evento, caso você queira melhorá-lo, sinta-se a vontade para fazer o seu "fork"  e criar pull-requests.
 
 
