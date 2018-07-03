@@ -6,3 +6,6 @@ patch:
   'npm:tunnel-agent:20170305':
     - gulp-sass > node-sass > pangyp > request > tunnel-agent:
         patched: '2018-06-26T01:54:28.372Z'
+  'npm:http-signature:20150122':
+    - gulp-sass > node-sass > pangyp > request > http-signature:
+        patched: '2018-07-03T01:56:59.056Z'
