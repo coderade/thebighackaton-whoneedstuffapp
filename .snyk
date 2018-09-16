@@ -6,6 +6,30 @@ patch:
   'npm:tunnel-agent:20170305':
     - gulp-sass > node-sass > pangyp > request > tunnel-agent:
         patched: '2018-06-26T01:54:28.372Z'
+    - gulp-sass > node-sass > pangyp > request > tunnel-agent:
+        patched: '2018-09-16T21:54:36.825Z'
   'npm:http-signature:20150122':
     - gulp-sass > node-sass > pangyp > request > http-signature:
         patched: '2018-07-03T01:56:59.056Z'
+    - gulp-sass > node-sass > pangyp > request > http-signature:
+        patched: '2018-09-16T21:54:36.825Z'
+  'npm:hawk:20160119':
+    - gulp-sass > node-sass > pangyp > request > hawk:
+        patched: '2018-09-16T21:54:36.825Z'
+  'npm:minimatch:20160620':
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-09-16T21:54:36.825Z'
+    - gulp-sass > node-sass > pangyp > minimatch:
+        patched: '2018-09-16T21:54:36.825Z'
+    - gulp-sass > node-sass > pangyp > glob > minimatch:
+        patched: '2018-09-16T21:54:36.825Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-09-16T21:54:36.825Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-09-16T21:54:36.825Z'
+  'npm:request:20160119':
+    - gulp-sass > node-sass > pangyp > request:
+        patched: '2018-09-16T21:54:36.825Z'
+  'npm:tar:20151103':
+    - gulp-sass > node-sass > pangyp > tar:
+        patched: '2018-09-16T21:54:36.825Z'
